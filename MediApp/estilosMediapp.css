@@ -247,3 +247,43 @@ body{
     box-shadow:0 15px 35px rgba(0,0,0,.15);
 
 }
+
+.card-tech{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    padding:12px 18px;
+
+    background:#ffffff;
+
+    border:1px solid rgba(0,0,0,.08);
+
+    border-radius:12px;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.card-tech:hover{
+
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,.12);
+
+}
+
+.card-tech i{
+
+    font-size:2rem;
+
+}
+
+.card-tech span{
+
+    font-weight:600;
+    color:#333;
+
+}

@@ -118,15 +118,6 @@ h3{
 
 
 
-:root{
-
-    --color-1:#93ECD0;
-    --color-2:#93DBEC;
-    --color-3:#93AFEC;
-    --color-texto:#2d3436;
-    --color-blanco:#ffffff;
-
-}
 
 /*==========================
     PRESENTACIÓN
@@ -147,39 +138,6 @@ h3{
         INFORMACIÓN
 ===========================*/
 
-.informacion{
-
-    flex:1;
-    min-width:420px;
-
-}
-
-.informacion h1{
-
-    font-size:3.5rem;
-    color:var(--color-texto);
-    margin-bottom:15px;
-    font-weight:700;
-
-}
-
-.informacion h3{
-
-    font-size:1.6rem;
-    color:#0d4b73;
-    margin-bottom:30px;
-    font-weight:600;
-
-}
-
-.informacion p{
-
-    font-size:1.1rem;
-    line-height:1.8;
-    margin-bottom:20px;
-    color:#333;
-
-}
 
 /*==========================
         BOTONES
