@@ -124,28 +124,6 @@ body{
         GALERÍA
 =======================*/
 
-.galeria{
-
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:20px;
-
-}
-
-.galeria img{
-
-    width:100%;
-    border-radius:15px;
-    box-shadow:0 10px 20px rgba(0,0,0,.12);
-    transition:.3s;
-
-}
-
-.galeria img:hover{
-
-    transform:scale(1.03);
-
-}
 
 /*======================
         BOTONES
@@ -285,5 +263,105 @@ body{
 
     font-weight:600;
     color:#333;
+
+}
+
+/*==============================
+            CARRUSEL
+==============================*/
+
+#myCarousel{
+
+    max-width:900px;
+    margin:50px auto;
+
+    border-radius:20px;
+    overflow:hidden;
+
+    background:#fff;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+#myCarousel .carousel-item{
+
+    background:#f8f9fa;
+
+}
+
+#myCarousel .carousel-item img{
+
+    width:100%;
+    height:850px;
+
+    object-fit:contain;
+
+    padding:25px;
+
+}
+
+/*==============================
+        FLECHAS
+==============================*/
+
+.carousel-control-prev,
+.carousel-control-next{
+
+    width:8%;
+
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+
+    width:55px;
+    height:55px;
+
+    border-radius:50%;
+
+    background-color:rgba(13,75,115,.85);
+
+    background-size:55%;
+
+    transition:.3s;
+
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon{
+
+    background-color:#0d4b73;
+
+    transform:scale(1.2);
+
+}
+
+/*==============================
+        DESCRIPCIÓN
+==============================*/
+
+.carousel-caption{
+
+    background:rgba(0,0,0,.55);
+
+    border-radius:12px;
+
+    padding:12px 20px;
+
+}
+
+.carousel-caption h5{
+
+    margin:0;
+    color:#fff;
+    font-size:1.3rem;
+
+}
+
+.carousel-caption p{
+
+    margin-top:8px;
+    color:#f1f1f1;
 
 }

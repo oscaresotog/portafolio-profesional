@@ -1,23 +1,6 @@
-new Swiper(".miCarrusel",{
 
-    loop:true,
 
-    spaceBetween:30,
-
-    pagination:{
-
-        el:".swiper-pagination",
-
-        clickable:true
-
-    },
-
-    navigation:{
-
-        nextEl:".swiper-button-next",
-
-        prevEl:".swiper-button-prev"
-
-    }
-
-});
+const myCarouselElement = document.querySelector('#myCarousel'); const carousel = new bootstrap.Carousel(
+    myCarouselElement,{ 
+        touch: true,
+    });
