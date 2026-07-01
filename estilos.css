@@ -509,3 +509,230 @@ h3{
 }
 
 }
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*=====================================
+            FOTO DE PERFIL
+======================================*/
+
+.foto{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex:1;
+
+}
+
+.foto-contenedor{
+
+    position:relative;
+
+    width:380px;
+    height:380px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    padding:10px;
+
+}
+
+/* Círculo degradado girando */
+
+.foto-contenedor::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-8px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        45deg,
+        var(--color-1),
+        var(--color-2),
+        var(--color-3),
+        var(--color-2),
+        var(--color-1)
+    );
+
+    animation:rotar 8s linear infinite;
+
+    z-index:0;
+
+}
+
+/* Fondo blanco */
+
+.foto-contenedor::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:8px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    z-index:1;
+
+}
+
+/* Imagen */
+
+.foto-contenedor img{
+
+    position:relative;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    z-index:2;
+
+    transition:.5s;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.18),
+        0 0 35px rgba(147,236,208,.45);
+
+}
+
+/* Hover */
+
+.foto-contenedor:hover img{
+
+    transform:scale(1.04);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.22),
+        0 0 45px rgba(147,175,236,.65);
+
+}
+
+/* Círculos decorativos */
+
+.foto-contenedor span{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    background:white;
+
+    box-shadow:0 0 15px rgba(255,255,255,.9);
+
+    animation:flotar 4s ease-in-out infinite;
+
+    z-index:3;
+
+}
+
+.foto-contenedor span:nth-child(1){
+
+    width:18px;
+    height:18px;
+
+    top:35px;
+    right:20px;
+
+}
+
+.foto-contenedor span:nth-child(2){
+
+    width:12px;
+    height:12px;
+
+    bottom:55px;
+    left:15px;
+
+    animation-delay:1.5s;
+
+}
+
+.foto-contenedor span:nth-child(3){
+
+    width:24px;
+    height:24px;
+
+    bottom:20px;
+    right:55px;
+
+    animation-delay:3s;
+
+}
+
+/* Animaciones */
+
+@keyframes rotar{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+@keyframes flotar{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+}
+
+/*=====================================
+            RESPONSIVE
+======================================*/
+
+@media(max-width:768px){
+
+    .foto-contenedor{
+
+        width:300px;
+        height:300px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .foto-contenedor{
+
+        width:230px;
+        height:230px;
+
+    }
+
+}

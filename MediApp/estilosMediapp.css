@@ -343,7 +343,7 @@ body{
 
 .carousel-caption{
 
-    background:rgba(0,0,0,.55);
+    background:rgba(194, 218, 255, 0.55);
 
     border-radius:12px;
 
@@ -359,9 +359,3 @@ body{
 
 }
 
-.carousel-caption p{
-
-    margin-top:8px;
-    color:#f1f1f1;
-
-}
