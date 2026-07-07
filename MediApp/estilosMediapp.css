@@ -63,9 +63,9 @@ body{
 .card-seccion{
 
     background:white;
-    padding:35px;
+    padding:25px;
     border-radius:20px;
-    margin-bottom:30px;
+    margin-bottom:10px;
     box-shadow:0 8px 25px rgba(0,0,0,.08);
 
 }
@@ -343,7 +343,7 @@ body{
 
 .carousel-caption{
 
-    background:rgba(194, 218, 255, 0.55);
+    background:rgba(0, 0, 0, 0.55);
 
     border-radius:12px;
 
